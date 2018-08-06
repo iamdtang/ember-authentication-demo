@@ -20,6 +20,14 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    torii: {
+      providers: {
+        'facebook-connect': {
+          appId:      process.env.FACEBOOK_CONNECT_APP_ID,
+        }
+      }
     }
   };
 
